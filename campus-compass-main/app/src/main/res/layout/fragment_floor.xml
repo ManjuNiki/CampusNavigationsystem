@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Floor">
+
+    <!-- Navigation Nodes (Common across all floors) -->
+    <!-- Node 0 -->
+    <TextView
+        android:id="@+id/Node0"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/node_normal"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <!-- Node 1 -->
+    <TextView
+        android:id="@+id/Node1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/node_normal"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <!-- Node 2 -->
+    <TextView
+        android:id="@+id/Node2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/node_normal"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <!-- Node 3 -->
+    <TextView
+        android:id="@+id/Node3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/node_normal"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!-- Node 4 -->
+    <TextView
+        android:id="@+id/Node4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/node_normal"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <!-- Node 5 -->
+    <TextView
+        android:id="@+id/Node5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/node_normal"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <!-- Stairs indicators -->
+    <TextView
+        android:id="@+id/stairs1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/stairs_normal"
+        android:gravity="center"
+        android:text="S1"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/stairs2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/stairs_normal"
+        android:gravity="center"
+        android:text="S2"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <!-- Connection lines -->
+    <View
+        android:id="@+id/line01"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/Node0"
+        app:layout_constraintEnd_toStartOf="@+id/Node1"
+        app:layout_constraintStart_toEndOf="@+id/Node0"
+        app:layout_constraintTop_toTopOf="@+id/Node1" />
+
+    <View
+        android:id="@+id/line12"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/Node1"
+        app:layout_constraintEnd_toStartOf="@+id/Node2"
+        app:layout_constraintStart_toEndOf="@+id/Node1"
+        app:layout_constraintTop_toTopOf="@+id/Node2" />
+
+    <View
+        android:id="@+id/line23"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Node3"
+        app:layout_constraintEnd_toEndOf="@+id/Node2"
+        app:layout_constraintStart_toStartOf="@+id/Node2"
+        app:layout_constraintTop_toBottomOf="@+id/Node2" />
+
+    <View
+        android:id="@+id/line34"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Node4"
+        app:layout_constraintEnd_toEndOf="@+id/Node3"
+        app:layout_constraintStart_toStartOf="@+id/Node3"
+        app:layout_constraintTop_toBottomOf="@+id/Node3" />
+
+    <View
+        android:id="@+id/line50"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/Node5"
+        app:layout_constraintEnd_toStartOf="@+id/Node0"
+        app:layout_constraintStart_toEndOf="@+id/Node5"
+        app:layout_constraintTop_toTopOf="@+id/Node0" />
+
+    <!-- Stairs connection lines -->
+    <View
+        android:id="@+id/line0s"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/Node0"
+        app:layout_constraintEnd_toStartOf="@+id/stairs1"
+        app:layout_constraintStart_toEndOf="@+id/Node0"
+        app:layout_constraintTop_toTopOf="@+id/stairs1" />
+
+    <View
+        android:id="@+id/line3s"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/stairs1"
+        app:layout_constraintEnd_toEndOf="@+id/Node3"
+        app:layout_constraintStart_toStartOf="@+id/Node3"
+        app:layout_constraintTop_toBottomOf="@+id/Node3" />
+
+    <View
+        android:id="@+id/line5s"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/Node5"
+        app:layout_constraintEnd_toStartOf="@+id/stairs2"
+        app:layout_constraintStart_toEndOf="@+id/Node5"
+        app:layout_constraintTop_toTopOf="@+id/stairs2" />
+
+    <View
+        android:id="@+id/line4s"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/Node4"
+        app:layout_constraintEnd_toStartOf="@+id/stairs2"
+        app:layout_constraintStart_toEndOf="@+id/Node4"
+        app:layout_constraintTop_toTopOf="@+id/stairs2" />
+
+    <View
+        android:id="@+id/linestairs1"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/stairs2"
+        app:layout_constraintEnd_toEndOf="@+id/stairs1"
+        app:layout_constraintStart_toStartOf="@+id/stairs1"
+        app:layout_constraintTop_toBottomOf="@+id/stairs1" />
+
+    <View
+        android:id="@+id/linestairs2"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@drawable/path_normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/stairs2"
+        app:layout_constraintEnd_toEndOf="@+id/stairs2"
+        app:layout_constraintStart_toStartOf="@+id/stairs2"
+        app:layout_constraintTop_toBottomOf="@+id/stairs1" />
+
+    <!-- Room labels positioned around nodes -->
+    <TextView android:id="@+id/topleftNode0" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node0" app:layout_constraintEnd_toStartOf="@+id/Node0" />
+    <TextView android:id="@+id/topNode0" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node0" app:layout_constraintStart_toStartOf="@+id/Node0" app:layout_constraintEnd_toEndOf="@+id/Node0" />
+    <TextView android:id="@+id/toprightNode0" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node0" app:layout_constraintStart_toEndOf="@+id/Node0" />
+    <TextView android:id="@+id/leftNode0" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node0" app:layout_constraintBottom_toBottomOf="@+id/Node0" app:layout_constraintEnd_toStartOf="@+id/Node0" />
+    <TextView android:id="@+id/rightNode0" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node0" app:layout_constraintBottom_toBottomOf="@+id/Node0" app:layout_constraintStart_toEndOf="@+id/Node0" />
+    <TextView android:id="@+id/bottomleftNode0" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node0" app:layout_constraintEnd_toStartOf="@+id/Node0" />
+    <TextView android:id="@+id/bottomNode0" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node0" app:layout_constraintStart_toStartOf="@+id/Node0" app:layout_constraintEnd_toEndOf="@+id/Node0" />
+    <TextView android:id="@+id/bottomrightNode0" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node0" app:layout_constraintStart_toEndOf="@+id/Node0" />
+
+    <!-- Node1 positions -->
+    <TextView android:id="@+id/topleftNode1" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node1" app:layout_constraintEnd_toStartOf="@+id/Node1" />
+    <TextView android:id="@+id/topNode1" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node1" app:layout_constraintStart_toStartOf="@+id/Node1" app:layout_constraintEnd_toEndOf="@+id/Node1" />
+    <TextView android:id="@+id/toprightNode1" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node1" app:layout_constraintStart_toEndOf="@+id/Node1" />
+    <TextView android:id="@+id/leftNode1" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node1" app:layout_constraintBottom_toBottomOf="@+id/Node1" app:layout_constraintEnd_toStartOf="@+id/Node1" />
+    <TextView android:id="@+id/rightNode1" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node1" app:layout_constraintBottom_toBottomOf="@+id/Node1" app:layout_constraintStart_toEndOf="@+id/Node1" />
+    <TextView android:id="@+id/bottomleftNode1" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node1" app:layout_constraintEnd_toStartOf="@+id/Node1" />
+    <TextView android:id="@+id/bottomNode1" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node1" app:layout_constraintStart_toStartOf="@+id/Node1" app:layout_constraintEnd_toEndOf="@+id/Node1" />
+    <TextView android:id="@+id/bottomrightNode1" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node1" app:layout_constraintStart_toEndOf="@+id/Node1" />
+
+    <!-- Node2 positions -->
+    <TextView android:id="@+id/topleftNode2" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node2" app:layout_constraintEnd_toStartOf="@+id/Node2" />
+    <TextView android:id="@+id/topNode2" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node2" app:layout_constraintStart_toStartOf="@+id/Node2" app:layout_constraintEnd_toEndOf="@+id/Node2" />
+    <TextView android:id="@+id/toprightNode2" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node2" app:layout_constraintStart_toEndOf="@+id/Node2" />
+    <TextView android:id="@+id/leftNode2" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node2" app:layout_constraintBottom_toBottomOf="@+id/Node2" app:layout_constraintEnd_toStartOf="@+id/Node2" />
+    <TextView android:id="@+id/rightNode2" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node2" app:layout_constraintBottom_toBottomOf="@+id/Node2" app:layout_constraintStart_toEndOf="@+id/Node2" />
+    <TextView android:id="@+id/bottomleftNode2" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node2" app:layout_constraintEnd_toStartOf="@+id/Node2" />
+    <TextView android:id="@+id/bottomNode2" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node2" app:layout_constraintStart_toStartOf="@+id/Node2" app:layout_constraintEnd_toEndOf="@+id/Node2" />
+    <TextView android:id="@+id/bottomrightNode2" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node2" app:layout_constraintStart_toEndOf="@+id/Node2" />
+
+    <!-- Node3 positions -->
+    <TextView android:id="@+id/topleftNode3" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node3" app:layout_constraintEnd_toStartOf="@+id/Node3" />
+    <TextView android:id="@+id/topNode3" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node3" app:layout_constraintStart_toStartOf="@+id/Node3" app:layout_constraintEnd_toEndOf="@+id/Node3" />
+    <TextView android:id="@+id/toprightNode3" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node3" app:layout_constraintStart_toEndOf="@+id/Node3" />
+    <TextView android:id="@+id/leftNode3" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node3" app:layout_constraintBottom_toBottomOf="@+id/Node3" app:layout_constraintEnd_toStartOf="@+id/Node3" />
+    <TextView android:id="@+id/rightNode3" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node3" app:layout_constraintBottom_toBottomOf="@+id/Node3" app:layout_constraintStart_toEndOf="@+id/Node3" />
+    <TextView android:id="@+id/bottomleftNode3" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node3" app:layout_constraintEnd_toStartOf="@+id/Node3" />
+    <TextView android:id="@+id/bottomNode3" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node3" app:layout_constraintStart_toStartOf="@+id/Node3" app:layout_constraintEnd_toEndOf="@+id/Node3" />
+    <TextView android:id="@+id/bottomrightNode3" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node3" app:layout_constraintStart_toEndOf="@+id/Node3" />
+
+    <!-- Node4 positions -->
+    <TextView android:id="@+id/topleftNode4" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node4" app:layout_constraintEnd_toStartOf="@+id/Node4" />
+    <TextView android:id="@+id/topNode4" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node4" app:layout_constraintStart_toStartOf="@+id/Node4" app:layout_constraintEnd_toEndOf="@+id/Node4" />
+    <TextView android:id="@+id/toprightNode4" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node4" app:layout_constraintStart_toEndOf="@+id/Node4" />
+    <TextView android:id="@+id/leftNode4" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node4" app:layout_constraintBottom_toBottomOf="@+id/Node4" app:layout_constraintEnd_toStartOf="@+id/Node4" />
+    <TextView android:id="@+id/rightNode4" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node4" app:layout_constraintBottom_toBottomOf="@+id/Node4" app:layout_constraintStart_toEndOf="@+id/Node4" />
+    <TextView android:id="@+id/bottomleftNode4" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node4" app:layout_constraintEnd_toStartOf="@+id/Node4" />
+    <TextView android:id="@+id/bottomNode4" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node4" app:layout_constraintStart_toStartOf="@+id/Node4" app:layout_constraintEnd_toEndOf="@+id/Node4" />
+    <TextView android:id="@+id/bottomrightNode4" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node4" app:layout_constraintStart_toEndOf="@+id/Node4" />
+
+    <!-- Node5 positions -->
+    <TextView android:id="@+id/topleftNode5" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node5" app:layout_constraintEnd_toStartOf="@+id/Node5" />
+    <TextView android:id="@+id/topNode5" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node5" app:layout_constraintStart_toStartOf="@+id/Node5" app:layout_constraintEnd_toEndOf="@+id/Node5" />
+    <TextView android:id="@+id/toprightNode5" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintBottom_toTopOf="@+id/Node5" app:layout_constraintStart_toEndOf="@+id/Node5" />
+    <TextView android:id="@+id/leftNode5" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node5" app:layout_constraintBottom_toBottomOf="@+id/Node5" app:layout_constraintEnd_toStartOf="@+id/Node5" />
+    <TextView android:id="@+id/rightNode5" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toTopOf="@+id/Node5" app:layout_constraintBottom_toBottomOf="@+id/Node5" app:layout_constraintStart_toEndOf="@+id/Node5" />
+    <TextView android:id="@+id/bottomleftNode5" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node5" app:layout_constraintEnd_toStartOf="@+id/Node5" />
+    <TextView android:id="@+id/bottomNode5" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node5" app:layout_constraintStart_toStartOf="@+id/Node5" app:layout_constraintEnd_toEndOf="@+id/Node5" />
+    <TextView android:id="@+id/bottomrightNode5" android:layout_width="80dp" android:layout_height="wrap_content" android:textSize="10sp" android:textColor="@color/black" android:background="@drawable/room_label_bg" android:gravity="center" android:visibility="invisible" app:layout_constraintTop_toBottomOf="@+id/Node5" app:layout_constraintStart_toEndOf="@+id/Node5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
